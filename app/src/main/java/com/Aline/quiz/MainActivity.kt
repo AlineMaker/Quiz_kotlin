@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.Aline.quiz.components.CardScreen
 import com.Aline.quiz.components.QuizScreen
+import com.Aline.quiz.screens.start.StartScreen
 import com.Aline.quiz.ui.theme.QuizTheme
 import org.intellij.lang.annotations.JdkConstants
 
@@ -36,7 +37,7 @@ class MainActivity : ComponentActivity() {
             QuizTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
 
-                    QuizScreen  (
+                    StartScreen  (
                         modifier = Modifier.padding(innerPadding)
                     )
 
