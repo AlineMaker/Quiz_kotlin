@@ -10,6 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.Aline.quiz.screens.start.StartScreen
 import com.Aline.quiz.screens.start.quiz.QuizScreen
+import com.Aline.quiz.screens.start.result.ResultScreen
 import com.Aline.quiz.ui.theme.QuizTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
             QuizTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
 
-                    QuizScreen  (
+                    ResultScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
 
