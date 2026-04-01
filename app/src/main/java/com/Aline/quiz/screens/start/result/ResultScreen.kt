@@ -24,10 +24,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.Aline.quiz.R
 
 @Composable
-fun ResultScreen(modifier: Modifier = Modifier) {
+fun ResultScreen(modifier: Modifier = Modifier, navController: NavHostController) {
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -81,6 +82,7 @@ fun ResultScreen(modifier: Modifier = Modifier) {
         )
         Spacer(modifier = Modifier.height(20.dp))
         Card(
+            onClick = {navController.navigate("Start")},
             modifier = Modifier
                 .width(280.dp)
                 .height(60.dp)
