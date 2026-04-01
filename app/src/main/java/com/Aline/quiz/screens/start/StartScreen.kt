@@ -29,10 +29,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.Aline.quiz.R
 
 @Composable
-fun StartScreen(modifier: Modifier = Modifier) {
+fun StartScreen(navController: NavController,
+    modifier: Modifier = Modifier) {
     Column(modifier = Modifier
         .fillMaxSize()
         .background(Color(98, 219, 251, 255)),
@@ -47,6 +49,7 @@ fun StartScreen(modifier: Modifier = Modifier) {
             fontSize = 40.sp)
         Spacer(modifier = Modifier.height(40.dp))
         Card(
+            onClick = {navController.navigate("quiz")},
                 modifier = Modifier
                     .width(220.dp)
                     .height(60.dp)
